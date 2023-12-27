@@ -36,7 +36,8 @@ function App() {
 
   return (
     <>
-      <h1 className="text-6xl text-red-200 bg-violet-500 flex justify-center py-1">Random Password Generator</h1>
+      <h1 className="text-center text-6xl text-red-200 bg-violet-500 flex justify-center py-1">Random Password Generator</h1>
+      <div className="flex">
       <div className="flex mt-5 w-[500px] m-auto">
         <input
           type="text"
@@ -48,7 +49,7 @@ function App() {
         />
         <button className="py-1 px-3 bg-slate-300 text-black mx-2" onClick={copyPasswordToClipboard}>Copy</button>
       </div>
-
+</div>
       <div className="flex justify-center mt-2">
         <input
           type="range"
@@ -60,6 +61,7 @@ function App() {
         />
         <label>Length : {length}</label>
       </div>
+      
       <div className="flex justify-center mt-2">
         <div>
           <input
